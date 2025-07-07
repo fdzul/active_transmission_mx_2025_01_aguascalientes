@@ -32,7 +32,7 @@ library(magrittr)
 ```{r heatmap_aguascalientes}
 z <- z |>
     dplyr::filter(accuracy != "locality")
-densnv::mp_heatmap(geocoded_datasets = z,
+densnv::mp_heatmap(geocoded_dataset = z,
                    cve_edo = "01",
                    locality = "Aguascalientes",
                    status_caso = c(1, 2),
